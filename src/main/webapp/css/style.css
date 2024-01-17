@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Roboto:wght@400;500;700&family=Young+Serif&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.my_container{
+    height:100vh;
+    width:100vw;
+    /* border:2px solid red; */
+    display:flex;
+    flex-direction: row;
+    position :fixed;
+}
+
+.logo-container{
+    /* border:4px solid green; */
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,9,121,1) 21%, rgba(8,100,181,1) 64%, rgba(7,116,191,1) 69%, rgba(5,138,205,1) 76%, rgba(0,212,255,1) 100%); 
+    clip-path: polygon(100% 0, 89% 24%, 100% 50%, 91% 74%, 100% 100%, 51% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+.login-container{
+    /* border:4px solid violet; */
+    width: 40%;
+    height: 100%;
+    padding:20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.login-container h3{
+    font-size: 30px;
+}
+.login-container form{
+    /* border:2px solid red; */
+    margin:20px;
+    font-size: 20px;
+    padding:20px;   
+}
+.login-container input{
+    outline: none;
+    border:0px solid;
+    border-bottom:2px solid grey;
+    padding:10px;
+    margin:10px;
+    font-size:16px;
+}
+
+.imgContainer{
+    width:100px;
+    height:100px;
+    position:relative;
+    left:40%;
+}
+.imgContainer img{
+    width:100%;
+    height:100%;    
+}
+.logo{
+    /* border:2px solid red; */
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    color:white;
+}
+.logo-content{
+    position:relative;
+    top:80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:50px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+    transform: translate(-10%);
+}
+
+.rotate{
+    transition:transform 1s ease-in-out;
+    font-size:200px;
+}
+
+.upper-p{
+    position: absolute;
+    transform: rotate(90deg);
+    left:400px;
+    top:70.4px;
+}
+.lower-p{
+    position:absolute;
+    transform: rotate(-90deg);
+    top:-80px;
+    left:150px;
+}
+
+.logo:hover .upper-p{
+    transform: rotate(0deg);
+}
+.logo:hover .lower-p{
+    transform: rotate(0deg);
+}
+
+.mybtn{
+    padding:15px;
+    color:white;
+    background-color: green;
+    border-radius: 50px;
+    border:2px solid green;
+    margin:20px;
+    font-size:18px;
+    width:100px;
+}
+
+.mybtn:hover{
+    background-color:rgb(3, 153, 3);
+}
+
+.form-container{
+    position:relative;
+    top:10%;
+}
